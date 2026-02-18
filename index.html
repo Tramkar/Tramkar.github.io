@@ -4,17 +4,63 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <H1><title>Alexey Polyanskikh website</title></H1>
+    <title>Alexey Polyanskikh website</title>
 
-       <style>
+    <style>
         body {
-            background-color: rgb(60, 62, 63); 
+            margin: 0;
+            font-family: Arial, sans-serif;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        /* Light mode (default) */
+        body.light {
+            background-color: white;
+            color: black;
+        }
+
+        /* Dark mode */
+        body.dark {
+            background-color: #121212;
+            color: white;
+        }
+
+        .toggle-container {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+
+        button {
+            padding: 8px 15px;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+            font-size: 14px;
         }
     </style>
 
+    <script>
+        function toggleMode() {
+            const body = document.body;
+            body.classList.toggle("dark");
+            body.classList.toggle("light");
+        }
+
+        window.onload = function() {
+            document.body.classList.add("light"); // start in light mode
+        };
+    </script>
+
 </head>
 <body>
-    <h1>Welcome to Alexey Polyanskikh's Website </h1>
+
+    <div class="toggle-container">
+        <button onclick="toggleMode()">Toggle Light/Dark Mode</button>
+    </div>
+
+    <h1>Welcome to Alexey Polyanskikh's Website</h1>
 
 </body>
 </html>
+
