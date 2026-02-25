@@ -66,6 +66,8 @@ body.dark .navbar {
     width: 100%;
 }
 
+/*I need to merge the toggle button with the navbar as it dose not work with phone screens. I will do that later, for now it looks nice and works on desktop so who cares?*/
+
 /* Toggle button */
 .toggle-btn {
     position: absolute;
