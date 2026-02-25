@@ -97,7 +97,8 @@ body.dark .navbar {
 .section {
     min-height: 500px;
     margin: 60px auto;
-    width: 80%;
+    width: 90%;
+    max-width: 1000px;
     padding: 40px;
     border-radius: 20px;
     background: rgba(255, 255, 255, 0.1);
