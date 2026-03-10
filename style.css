@@ -145,5 +145,61 @@ projects iframe{
     margin:20px;
     border-radius:10px;
 }
+
+
+/* ===== MOBILE FIX ===== */
+@media (max-width: 768px) {
+
+    /* Navbar becomes taller */
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px 0;
+    }
+
+    .navbar a {
+        display: block;
+        margin: 8px 0;
+        font-size: 15px;
+    }
+
+    /* Toggle button moves into normal flow */
+    .toggle-btn {
+        position: static;
+        margin-top: 10px;
+    }
+
+    /* Increase spacing so content doesn't hide under navbar */
+    .content {
+        padding-top: 180px;
+    }
+
+    /* Make GitHub cards responsive */
+    iframe {
+        width: 90%;
+        max-width: 400px;
+        height: 150px;
+    }
+}
+
+
+/* ===== VERY SMALL PHONES ===== */
+@media (max-width: 480px) {
+
+    .navbar a {
+        font-size: 14px;
+        margin: 6px 0;
+    }
+
+    .section {
+        padding: 25px;
+        font-size: 18px;
+    }
+
+    .content {
+        padding-top: 200px;
+    }
+}
 /* moved style to css and added some flare. Looks nice but some stuff dose not seem to work? ah fuck it i will just remove it */
 /* Need to find an image of my self to put on website*/
